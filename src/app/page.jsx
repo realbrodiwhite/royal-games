@@ -1,10 +1,10 @@
 "use client";
+
 import React from "react";
+import { userSession } from "next-auth/react";
 import RoyalGamesGlobalStylesheet from "../components/royal-games-global-stylesheet";
 import RoyalGamesLayout from "../components/royal-games-layout";
 import * as ShadcnUI from "@/design-libraries/shadcn-ui";
-
-("use client");
 
 function MainComponent() {
   const { data: session, status } = useSession();
